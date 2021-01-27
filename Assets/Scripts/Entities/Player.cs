@@ -12,13 +12,6 @@ public class Player : MonoBehaviour, IPlayer
 
     void Awake()
     {
-        
         Health = 10;
-    }
-
-    public void Rotate()
-    {
-        //Vector2 mouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-        //characterController.Move(transform.TransformDirection(mouseInput * playerSpeed * Time.deltaTime));
     }
 }

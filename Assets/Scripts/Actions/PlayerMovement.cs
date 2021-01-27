@@ -9,7 +9,7 @@
     public float gravity = 2f;
 
     private CharacterController _characterController;
-    private Vector3 _jumpDirection;
+    private Vector3 _direction;
 
     private bool PlayerJumped => _characterController.isGrounded && Input.GetKey(KeyCode.Space);
      
@@ -26,27 +26,26 @@
         float vertical = Input.GetAxis("Vertical");
 
         // Set movement and direction
-        Vector3 inputDirection = new Vector3(horizontal, 0, vertical);
+        Vector3 inputDirection = new Vector3(horizontal, 0f, vertical);
         Vector3 transformDirection = transform.TransformDirection(inputDirection);
-
         Vector3 strafeMovement = moveSpeed * Time.deltaTime * transformDirection;
 
-        _jumpDirection = new Vector3(strafeMovement.x, _jumpDirection.y, strafeMovement.z);
+        _direction = new Vector3(strafeMovement.x, _direction.y, strafeMovement.z);
 
         // Modify Y axis by player jump
         if (PlayerJumped)
         {
-            _jumpDirection.y = jumpSpeed;
+            _direction.y = jumpSpeed;
         }
-        //else if(_characterController.isGrounded)
-        //{
-        //    _jumpDirection.y = 0f;
-        //}
+        else if (_characterController.isGrounded)
+        {
+            _direction.y = 0f;
+        }
         else
         {
-            _jumpDirection.y -= gravity * Time.deltaTime;
+            _direction.y -= gravity * Time.deltaTime;
         }
 
-        _characterController.Move(_jumpDirection);
+        _characterController.Move(_direction);
     }
  }
