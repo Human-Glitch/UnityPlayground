@@ -1,4 +1,4 @@
-﻿public interface IPlayer
+﻿public interface ICharacter
 {
     int Health { get; set; }
 
