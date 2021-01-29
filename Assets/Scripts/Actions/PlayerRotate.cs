@@ -1,21 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Assets.Scripts.Configs;
+using Assets.Scripts.Inputs;
+using Assets.Scripts.Interfaces;
 using UnityEngine;
 
-public class PlayerRotate : MonoBehaviour
+[RequireComponent(typeof(PlayerInput))]
+public class PlayerRotate : MonoBehaviour, IRotate
 {
-    [SerializeField]
-    private float _turnSpeed;
+    [SerializeField] private RotateSettings _rotateSettings;
+
+    private PlayerInput _playerInput;
+
+    /// <summary>
+    /// Injected Rotate Settings
+    /// </summary>
+    public RotateSettings RotateSettings 
+    {
+        get
+        {
+            return _rotateSettings;
+        }
+    }
 
     private void Awake()
     {
-        _turnSpeed = 100f;
+        _playerInput = GetComponent<PlayerInput>();
     }
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
-        Vector3 mouseInput = new Vector3(0, Input.GetAxis("Mouse X"), 0);
-
-        transform.Rotate(Time.deltaTime * _turnSpeed * mouseInput);
+        Vector3 rotationInput = _playerInput.Rotation;
+        transform.Rotate(Time.deltaTime * RotateSettings.TurnSpeed * rotationInput);
     }
 }

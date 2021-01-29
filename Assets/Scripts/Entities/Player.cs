@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour, IPlayer
+public class Player : MonoBehaviour, ICharacter
 {
     [field: SerializeField]
     public int Health { get; set; }
