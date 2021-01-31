@@ -5,7 +5,7 @@ using UnityEditor;
 using System.Collections.Generic;
 using UnityEditor.Build.Reporting;
 
-namespace Assets.Scripts.Deployment
+namespace Assets.Editor
 {
     // ------------------------------------------------------------------------
     // https://docs.unity3d.com/Manual/CommandLineArguments.html
