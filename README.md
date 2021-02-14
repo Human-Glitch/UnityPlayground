@@ -85,3 +85,10 @@ Set up Git webhooks:
     - Check active
 
 5. Test webhook by commiting to the repo.
+
+===========================
+Deployment Notes:
+===========================
+1. Open Ngrok port and generate new url (url regrenerates on free version)
+2. Update webhook url on Github project
+3. Push new commit
