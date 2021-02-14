@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Projects\UnityPlayground" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Actions" t="Include">
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerRotate.cs" t="Include" />
+          </e>
+          <e p="Configs" t="Include">
+            <e p="MovementSettings.cs" t="Include" />
+            <e p="RotateSettings.cs" t="Include" />
+          </e>
+          <e p="Entities" t="Include">
+            <e p="Player.cs" t="Include" />
+          </e>
+          <e p="Inputs" t="Include">
+            <e p="PlayerInput.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="ICharacter.cs" t="Include" />
+            <e p="IMovement.cs" t="Include" />
+            <e p="IRotate.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Tests" t="Include">
+          <e p="Editor" t="Include">
+            <e p="PlaygroundTests.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="UnityPlayground.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\kodyb\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\kodyb\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_UnityPlayground.1947451131.00" t="ExcludeRecursive" />
+  </component>
+</project>

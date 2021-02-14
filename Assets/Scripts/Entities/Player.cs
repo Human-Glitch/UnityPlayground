@@ -1,17 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Interfaces;
 using UnityEngine;
 
-public class Player : MonoBehaviour, ICharacter
+namespace Entities
 {
-    [field: SerializeField]
-    public int Health { get; set; }
-
-    [field: SerializeField]
-    public bool IsGrounded { get; set; } 
-
-    void Awake()
+    public class Player : MonoBehaviour, ICharacter
     {
-        Health = 10;
+        [field: SerializeField]
+        public int Health { get; set; }
+
+        [field: SerializeField]
+        public bool IsGrounded { get; set; }
+
+        private void Awake()
+        {
+            Health = 10;
+        }
     }
 }

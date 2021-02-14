@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Scripts.Configs
+namespace Configs
 {
     [CreateAssetMenu(menuName = "Movement/Settings", fileName = "MovementData")]
     public class MovementSettings : ScriptableObject
@@ -10,8 +9,8 @@ namespace Assets.Scripts.Configs
         [SerializeField] private float _jumpSpeed = 0.5f;
         [SerializeField] private float _gravity = 2f;
 
-        public float MoveSpeed { get { return _moveSpeed; } }
-        public float JumpSpeed { get { return _jumpSpeed; } }
-        public float Gravity { get { return _gravity; } }
+        public float MoveSpeed => _moveSpeed;
+        public float JumpSpeed => _jumpSpeed;
+        public float Gravity => _gravity;
     }
 }

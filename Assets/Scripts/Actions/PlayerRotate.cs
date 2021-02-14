@@ -1,34 +1,32 @@
-﻿using Assets.Scripts.Configs;
-using Assets.Scripts.Inputs;
-using Assets.Scripts.Interfaces;
+﻿using Configs;
+using Inputs;
+using Interfaces;
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerInput))]
-public class PlayerRotate : MonoBehaviour, IRotate
+namespace Actions
 {
-    [SerializeField] private RotateSettings _rotateSettings;
-
-    private PlayerInput _playerInput;
-
-    /// <summary>
-    /// Injected Rotate Settings
-    /// </summary>
-    public RotateSettings RotateSettings 
+    [RequireComponent(typeof(PlayerInput))]
+    [RequireComponent(typeof(RotateSettings))]
+    public class PlayerRotate : MonoBehaviour, IRotate
     {
-        get
+        [SerializeField] private RotateSettings _rotateSettings;
+
+        private PlayerInput _playerInput;
+
+        /// <summary>
+        /// Injected Rotate Settings
+        /// </summary>
+        public RotateSettings RotateSettings => _rotateSettings;
+
+        private void Awake()
         {
-            return _rotateSettings;
+            _playerInput = GetComponent<PlayerInput>();
         }
-    }
 
-    private void Awake()
-    {
-        _playerInput = GetComponent<PlayerInput>();
-    }
-    
-    void FixedUpdate()
-    {
-        Vector3 rotationInput = _playerInput.Rotation;
-        transform.Rotate(Time.deltaTime * RotateSettings.TurnSpeed * rotationInput);
+        private void FixedUpdate()
+        {
+            Vector3 rotationInput = _playerInput.Rotation;
+            transform.Rotate(Time.deltaTime * RotateSettings.TurnSpeed * rotationInput);
+        }
     }
 }

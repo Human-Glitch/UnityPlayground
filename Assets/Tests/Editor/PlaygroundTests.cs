@@ -1,23 +1,23 @@
 ﻿using NUnit.Framework;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class PlaygroundTests
+namespace Tests.Editor
 {
-    /// <summary>
-    /// Use NSubstitute for mocking.
-    /// </summary>
-    [Test]
-    public void MethodName_Conditions_Result()
+    public class PlaygroundTests
     {
-        // Arrange
+        /// <summary>
+        /// Use NSubstitute for mocking.
+        /// </summary>
+        [Test]
+        public void MethodName_Conditions_Result()
+        {
+            // Arrange
         
 
-        // Act
+            // Act
         
 
-        // Assert
+            // Assert
         
+        }
     }
 }

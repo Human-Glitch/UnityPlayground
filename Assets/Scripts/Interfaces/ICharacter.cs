@@ -1,6 +1,9 @@
-﻿public interface ICharacter
+﻿namespace Interfaces
 {
-    int Health { get; set; }
+    public interface ICharacter
+    {
+        int Health { get; set; }
 
-    bool IsGrounded { get; set; }
+        bool IsGrounded { get; set; }
+    }
 }

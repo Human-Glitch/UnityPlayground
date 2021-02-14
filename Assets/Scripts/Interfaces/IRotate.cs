@@ -1,6 +1,6 @@
-﻿using Assets.Scripts.Configs;
+﻿using Configs;
 
-namespace Assets.Scripts.Interfaces
+namespace Interfaces
 {
     public interface IRotate
     {
