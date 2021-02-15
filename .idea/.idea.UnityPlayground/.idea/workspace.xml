@@ -10,6 +10,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Jenkins/Editor/PlatformBuilds.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Jenkins/Editor/PlatformSpecificBuildOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Jenkins-for-Unity/Assets/Jenkins/Editor/UnityBuild.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Actions/PlayerMovement.cs" />
@@ -22,6 +27,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IRotate.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/Editor/PlaygroundTests.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Actions/PlayerRotate.cs" />
+      <option value="$PROJECT_DIR$/Assets/Jenkins/Editor/PlatformSpecificBuildOptions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Jenkins/Editor/PlatformBuilds.cs" />
+      <option value="$PROJECT_DIR$/Assets/Jenkins/Editor/UnityBuild.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oRkd7NSsATMBtun51yIzmNSRr5" />
@@ -47,10 +55,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13944">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13944" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>

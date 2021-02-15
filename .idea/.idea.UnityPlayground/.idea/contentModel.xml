@@ -5,6 +5,13 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Jenkins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="PlatformBuilds.cs" t="Include" />
+            <e p="PlatformSpecificBuildOptions.cs" t="Include" />
+            <e p="UnityBuild.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Actions" t="Include">
             <e p="PlayerMovement.cs" t="Include" />
@@ -34,6 +41,7 @@
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
       <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="UnityPlayground.sln" t="IncludeFlat" />
     </e>
